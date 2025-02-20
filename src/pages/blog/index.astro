@@ -1,16 +1,10 @@
 ---
-import Nav from "../../components/Nav.astro"
-import '../../styles/global.css'
+import BaseLayout from "../../layouts/BaseLayout.astro";
 ---
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <Nav ></Nav>
+<BaseLayout pageTitle="Blog">
     <h1>Blog</h1>
-</body>
-</html>
+    <ul>
+        <li><a href="blog/posts/post-1">Post 1</a></li>
+        <li><a href="blog/posts/post-2">Post 2</a></li>
+    </ul>
+</BaseLayout>

@@ -1,17 +1,7 @@
 ---
-import Nav from "../components/Nav.astro"
-import '../styles/global.css'
----
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<!-- <link rel="stylesheet" href="/global.css"> -->
-</head>
-<body>
-	<Nav />
+import BaseLayout from "../layouts/BaseLayout.astro";
 
-</body>
-</html>
+---
+<BaseLayout pageTitle="Home">
+    <h1>HOME</h1>
+</BaseLayout>
