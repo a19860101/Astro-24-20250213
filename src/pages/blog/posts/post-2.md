@@ -1,11 +1,11 @@
 ---
 layout: '../../../layouts/MDLayout.astro'
-title: '002'
+title: ' WBC資格賽》孫易磊繼2023年亞錦賽後再踏進台北大巨蛋 火腿隊友超羨慕他'
 author: John
 pubDate: 2025-02-20
 description: '我的第一篇文章'
 image:
-    src: 'https://picsum.photos/id/34/800'
+    src: '/images/001.jpg'
     alt: '替代文字'
 ---
 

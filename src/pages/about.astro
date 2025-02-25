@@ -1,6 +1,46 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+// 陣列 Array
+const datas = ['apple','banana','cat']
+
+// 物件 Object
+const users = {
+    name: 'John',
+    mail: 'asdf@gmail.com',
+    age: '24'
+}
+
+const posts = [
+    {
+        title: 'post 1',
+        pubDate: '2025-02-20'
+    },
+    {
+        title: 'post 2',
+        pubDate: '2025-02-22'
+    },
+    {
+        title: '文章三',
+        pubDate: '2025-02-25'
+    }
+]
 ---
 <BaseLayout pageTitle="About">
     <h1>About</h1>
+    <div class="container">
+
+        {
+            // datas.map(function(data){
+                //     return <div>{data}</div>
+                // })
+                
+            // datas.map(data => <div>{data}</div>)
+        }
+
+    <!-- <ul>
+        {posts.map(post => <li>{post.title}</li>)}
+    </ul> -->
+</div>
+
 </BaseLayout>
