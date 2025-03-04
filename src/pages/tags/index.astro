@@ -1,0 +1,23 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Tag from '../../components/Tag.astro'
+const allPosts = Object.values(import.meta.glob('../blog/posts/*.md',{eager:true}))
+const uniqueTags = [...new Set(allPosts.map((post:any) => post.frontmatter.tags ).flat())]
+
+
+---
+<BaseLayout>
+    <h1>Tag</h1>
+    <div class="container">
+        <div>
+            {
+                uniqueTags.map((tag:any)=><Tag tag={tag}></Tag>)
+            }
+        </div>
+        <!-- <div>
+            {
+                uniqueTags.map((tag:any) => <a href={`tags/${tag}`}>{tag}</a>)
+            }
+        </div> -->
+    </div>
+</BaseLayout>

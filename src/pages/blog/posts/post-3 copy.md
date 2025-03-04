@@ -7,6 +7,7 @@ description: '我的第三篇文章'
 image:
     src: '/images/003.jpg'
     alt: '替代文字'
+tags: ['礁溪','旅遊','astro']
 ---
 ## 003
 

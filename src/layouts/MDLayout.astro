@@ -8,6 +8,9 @@ const {frontmatter} = Astro.props
         <div>作者:{frontmatter.author}</div>
         <div>發布日期:{frontmatter.pubDate}</div>
         <slot />
+        <div>
+            <a href="/blog">文章列表</a>
+        </div>
     </article>
 </BaseLayout>
 <style>

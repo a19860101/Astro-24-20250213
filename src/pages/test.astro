@@ -88,5 +88,39 @@
     <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus placeat aut sunt necessitatibus libero veniam cupiditate velit, excepturi ipsa minima officia quasi ducimus. Esse ab expedita sint cumque enim praesentium minima. Dignissimos vero beatae provident, voluptas nam architecto quia veritatis iure obcaecati repellat assumenda nihil voluptate id reprehenderit culpa quam aliquam, eius quaerat quisquam ullam velit alias quos eveniet praesentium! Labore laborum est veritatis voluptate assumenda adipisci accusamus blanditiis quibusdam consectetur odit reiciendis quasi explicabo facere tempora distinctio aliquam accusantium alias totam et inventore sequi neque, repellendus, provident natus? Repellat harum necessitatibus dolorem voluptates porro enim rerum ducimus perspiciatis neque autem accusantium eius ratione et ipsa est sapiente ipsam incidunt quo, inventore deleniti reprehenderit sed vero repudiandae. Numquam fugiat, amet accusamus nam provident iste porro blanditiis ut possimus deleniti! Nesciunt ut ex excepturi voluptatem fugiat voluptatibus sequi quibusdam exercitationem obcaecati dolore harum ullam veritatis, deserunt amet itaque qui. Suscipit deserunt reiciendis magni ut harum placeat voluptate assumenda ullam in inventore sit debitis maxime dignissimos eveniet, error consequuntur? Porro voluptatibus sed quam? Eveniet, ipsum nesciunt voluptatum quos molestias veniam molestiae quo magnam? Sit enim distinctio consectetur qui voluptate cumque illum inventore adipisci ab, vitae iste id, culpa reprehenderit tenetur, dolores nobis optio. Enim similique unde ipsam necessitatibus nemo soluta eum dignissimos accusantium temporibus! Quos dolor aspernatur fugiat temporibus placeat animi consequatur tempora delectus saepe unde, odio in atque maxime non sunt sint voluptatem exercitationem quibusdam ullam harum. Ipsam magnam totam beatae recusandae velit, hic eaque! Quod nobis nisi error quibusdam optio. Sint aliquid ratione dolore cumque repellat quisquam quas beatae incidunt quibusdam non, nam dignissimos eaque autem minima alias totam debitis maiores tempore animi nihil atque ad doloremque explicabo? Laboriosam optio, quisquam iure, est accusantium illum enim quod ducimus vel culpa fugit a nam mollitia recusandae odit, temporibus ab quae officiis.
     </p>
+    <script>
+        const posts = [
+            {
+            title: 't1',
+            tags: ['a','b']
+        },
+        {
+            title: 't2',
+            tags: ['a','c']
+        },
+        {
+            title: 't3',
+            tags: ['c','d']
+        }
+        
+
+        ]
+
+        const p = posts.map(post=>post.tags)
+        const p2 = posts.map(post=>post.tags).flat()
+        const p3 = Array.from(new Set(p2))
+        const p4 = [...new Set(p2)]
+
+        // console.log(p)
+        // console.log(p2)
+        // console.log(p3)
+        // console.log(p4)
+
+        const f = posts.filter(post=>post.title == 't3')
+        // console.log(f)
+
+        const f2 = posts.filter(post => post.tags.includes('b'))
+        console.log(f2)
+    </script>
 </body>
 </html>

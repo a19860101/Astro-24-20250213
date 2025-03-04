@@ -24,8 +24,8 @@ footer {
     background-color: #222;
     text-align: center;
 
-    position: fixed;
-    bottom: 0;
+    /* position: fixed; */
+    /* bottom: 0; */
     color: #fff;
 
     display: flex;
@@ -64,7 +64,7 @@ footer a {
 }
 .card-body {
     padding: 10px;
-    height: 180px;
+    min-height: 180px;
     display: flex;
     flex-direction: column;
 }
