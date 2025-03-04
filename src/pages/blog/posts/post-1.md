@@ -7,6 +7,8 @@ description: '我的第一篇文章'
 image:
     src: '/images/001.jpg'
     alt: '替代文字'
+tags: ['learning']
+
 ---
 
 ## iPhone 16e登場「一功能」被拔除！果粉哀號：無法接受
