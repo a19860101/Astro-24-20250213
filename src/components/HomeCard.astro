@@ -1,0 +1,38 @@
+---
+import Tag from "./Tag.astro"
+const {post, url} = Astro.props
+---
+<div class="h-card">
+    <div class="h-card-img">
+        <img src={post.image.src} alt="" class="cover">
+    </div>
+    <div class="h-card-body">
+        <small>{post.pubDate.slice(0,10)}</small>
+        <h3>{post.title}</h3>
+        <div>
+            <!-- <small>
+                {post.tags.join(',')}
+            </small> -->
+            {
+                post.tags.map((tag:any) => <Tag tag={tag}></Tag>)
+            }
+        </div>
+        <a href={url} class="h-card-btn">繼續閱讀</a>
+    </div>
+</div>
+<style>
+    .h-card {
+        background-color: #ccc;
+        padding: 15px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        .h-card-img {
+            width: 25%;
+        }
+        .h-card-body {
+            width: 75%;
+            padding-left: 15px;
+        }
+    }
+</style>

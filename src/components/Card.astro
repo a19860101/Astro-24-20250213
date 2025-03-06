@@ -7,6 +7,7 @@ const {post, url} = Astro.props
         <img src={post.image.src} alt="" class="cover">
     </div>
     <div class="card-body">
+        <small>{post.pubDate.slice(0,10)}</small>
         <h3>{post.title}</h3>
         <div>
             <!-- <small>

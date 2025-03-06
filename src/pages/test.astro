@@ -120,7 +120,34 @@
         // console.log(f)
 
         const f2 = posts.filter(post => post.tags.includes('b'))
-        console.log(f2)
+        // console.log(f2);
+        
+        // const n = [3,1,5,2,4];
+        const n = ['3','1','5','2','4']
+
+        // n.sort()
+        // n.sort().reverse();
+        // 遞增
+        // n.sort((a,b) => a-b)
+        // n.sort((b,a) => b-a)
+        // 遞減
+        // n.sort((b,a) => a-b)
+        // n.sort((a,b) => b-a)
+        
+        // n.sort((a,b) => Number(a)-Number(b))
+        // n.sort((b,a) => Number(a)-Number(b))
+
+        // console.log(n)
+
+        const myDate = ['2025-02-20','2025-02-12','2025-02-02','2025-02-19',];
+
+        // myDate.sort().reverse();
+        // myDate.sort((a,b)=>a.localeCompare(b) || b.localeCompare(a));
+        myDate.sort((b,a)=>a.localeCompare(b) || b.localeCompare(a));
+
+        console.log(myDate)
+
+
     </script>
 </body>
 </html>

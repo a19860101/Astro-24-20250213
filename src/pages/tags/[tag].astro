@@ -30,6 +30,7 @@ export async function getStaticPaths(){
 const {tag} = Astro.params
 const {posts} = Astro.props
 
+posts.sort((b:any,a:any)=>a.frontmatter.pubDate.localeCompare(b.frontmatter.pubDate) || b.frontmatter.pubDate.localeCompare(a.frontmatter.pubDate))
 // const filterPosts = posts.filter((post:any)=> post.frontmatter.tags.includes(tag))
 ---
 <BaseLayout>
