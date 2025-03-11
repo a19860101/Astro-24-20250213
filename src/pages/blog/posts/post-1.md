@@ -1,6 +1,6 @@
 ---
 layout: '../../../layouts/MDLayout.astro'
-title: 經典賽資格賽即時賽況》中華隊王牌徐若熙登板 接手對決西班牙 最新戰況一次看！
+title: 123經典賽資格賽即時賽況》中華隊王牌徐若熙登板 接手對決西班牙 最新戰況一次看！
 author: John
 pubDate: 2025-02-28
 description: '我的第一篇文章'
